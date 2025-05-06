@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
+
 const NavBar = () => {
   return (
     <div className="navbar p-0 bg-base-100 shadow-sm mx-auto px-8 md:px-12 lg:px-16 xl:px-24">
@@ -84,9 +85,12 @@ const NavBar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end space-x-5">
+        <div>
+          <img src="/user.png" alt="user" />
+        </div>
         <NavLink
-          to="/contactUs"
+          to="/auth/login"
           className="btn bg-[#0EA106] rounded-4xl text-white px-5 fontMulish font-bold text-xl"
         >
           Log In
