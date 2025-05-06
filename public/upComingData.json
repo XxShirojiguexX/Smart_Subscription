@@ -1,0 +1,196 @@
+[
+  {
+    "id": 1,
+    "name": "Tech Gadget Box",
+    "thumbnail": "https://i.ibb.co.com/bScKjgM/techth.jpg",
+    "banner": "https://i.ibb.co.com/W44rgC8V/techbn.jpg",
+    "frequency": "Monthly",
+    "price": 49.99,
+    "description": "Monthly delivery of cutting-edge tech gadgets and accessories",
+    "tech_category": "Electronics",
+    "features": [
+      "Latest tech accessories",
+      "Exclusive tech items",
+      "Compatibility guides"
+    ],
+    "subscription_benefits": [
+      "20% off future purchases",
+      "Tech tutorials",
+      "Early access to new products"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 428
+  },
+  {
+    "id": 2,
+    "name": "Gamer's Paradise",
+    "thumbnail": "https://i.ibb.co.com/ZRmv70wy/gamerth.jpg",
+    "banner": "https://i.ibb.co.com/zTNwxtZD/gamer.jpg",
+    "frequency": "Bi-Monthly",
+    "price": 59.99,
+    "description": "Premium gaming accessories and collectibles every 2 months",
+    "tech_category": "Gaming",
+    "features": [
+      "Mechanical keyboard switches",
+      "RGB lighting accessories",
+      "Limited edition merch"
+    ],
+    "subscription_benefits": [
+      "Exclusive in-game content",
+      "Early beta access",
+      "Gaming tournament invites"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 721
+  },
+  {
+    "id": 3,
+    "name": "DIY Electronics Kit",
+    "thumbnail": "https://i.ibb.co.com/5Xy9wKbx/elect.jpg",
+    "banner": "https://i.ibb.co.com/JwrL5nYc/electbn.jpg",
+    "frequency": "Monthly",
+    "price": 39.99,
+    "description": "Monthly electronics projects with all necessary components",
+    "tech_category": "STEM Education",
+    "features": [
+      "Step-by-step instructions",
+      "All required components",
+      "Programming challenges"
+    ],
+    "subscription_benefits": [
+      "Online community access",
+      "Video tutorials",
+      "Project showcase opportunities"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 543
+  },
+  {
+    "id": 4,
+    "name": "Photography Pro",
+    "thumbnail": "https://i.ibb.co.com/PzQCZWrc/photographer.jpg",
+    "banner": "https://i.ibb.co.com/5XJCM7fD/photographerbn.jpg",
+    "frequency": "Quarterly",
+    "price": 79.99,
+    "description": "Professional photography accessories and editing tools",
+    "tech_category": "Photography",
+    "features": [
+      "Lens accessories",
+      "Lighting equipment",
+      "Editing software licenses"
+    ],
+    "subscription_benefits": [
+      "Online masterclasses",
+      "Photo critique sessions",
+      "Stock photo credits"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 289
+  },
+  {
+    "id": 5,
+    "name": "Cybersecurity Kit",
+    "thumbnail": "https://i.ibb.co.com/7wNqQvc/cyberbn.jpg",
+    "banner": "https://i.ibb.co.com/qM804V5N/cyber.jpg",
+    "frequency": "Bi-Monthly",
+    "price": 59.99,
+    "description": "Essential cybersecurity tools and privacy protection gear",
+    "tech_category": "Security",
+    "features": ["VPN subscriptions", "Security hardware", "Privacy tools"],
+    "subscription_benefits": [
+      "Security audits",
+      "Dark web monitoring",
+      "Expert consultations"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 254
+  },
+  {
+    "id": 6,
+    "name": "Drone Pilot Pack",
+    "thumbnail": "https://i.ibb.co.com/mVD1PF5b/drone.jpg",
+    "banner": "https://i.ibb.co.com/n8cV11By/dronep.jpg",
+    "frequency": "Quarterly",
+    "price": 119.99,
+    "description": "Advanced drone accessories and piloting tools every quarter",
+    "tech_category": "Drones",
+    "features": [
+      "Propeller sets",
+      "Camera filters",
+      "Flight control accessories"
+    ],
+    "subscription_benefits": [
+      "Flight training videos",
+      "Mapping software credits",
+      "Drone insurance discounts"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 176
+  },
+  {
+    "id": 7,
+    "name": "Fresh Veggie Box",
+    "thumbnail": "https://i.ibb.co.com/nN8Ycghc/veg.jpg",
+    "banner": "https://i.ibb.co.com/4wsYDGvs/vegitablebn.jpg",
+    "frequency": "Weekly",
+    "price": 29.99,
+    "description": "A weekly box of hand-picked, farm-fresh vegetables delivered to your door.",
+    "tech_category": "Fresh Produce",
+    "features": [
+      "Seasonal Organic Vegetables",
+      "Locally Sourced Greens",
+      "Zero-Plastic Packaging"
+    ],
+    "subscription_benefits": [
+      "Farm-to-Door Delivery",
+      "Weekly Recipe Cards",
+      "Nutrition Tips from Dietitians"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 412
+  },
+  {
+    "id": 8,
+    "name": "Beauty Bliss Box",
+    "thumbnail": "https://i.ibb.co.com/mFhPd81V/beautyth.jpg",
+    "banner": "https://i.ibb.co.com/1YGG4W9S/beautyb.jpg",
+    "frequency": "Monthly",
+    "price": 29.99,
+    "description": "Treat yourself with high-end beauty, skincare, and makeup products every month.",
+    "tech_category": "Beauty",
+    "features": [
+      "Luxury Samples",
+      "Full-size Products",
+      "How-to Video Tutorials"
+    ],
+    "subscription_benefits": [
+      "Makeup Class Passes",
+      "Early Product Access",
+      "Skin Analyzer Discount"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 375
+  },
+  {
+    "id": 9,
+    "name": "Fitness Fuel Box",
+    "thumbnail": "https://i.ibb.co.com/60XBrcTQ/fitnessth.jpg",
+    "banner": "https://i.ibb.co.com/XZNhV7vM/fitness.jpg",
+    "frequency": "Monthly",
+    "price": 59.99,
+    "description": "A powerful box filled with protein snacks, supplements, and workout accessories to keep you energized.",
+    "tech_category": "Fitness",
+    "features": [
+      "High-protein Snacks",
+      "Fitness Bands & Accessories",
+      "Pre/Post Workout Samples"
+    ],
+    "subscription_benefits": [
+      "Exclusive Fitness Guides",
+      "Early Product Launch Access",
+      "Loyalty Points on Purchases"
+    ],
+    "ratings": 4.5,
+    "number_of_reviews": 210
+  }
+]

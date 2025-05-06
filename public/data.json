@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "name": "Smart Home Box",
+    "thumbnail": "https://i.ibb.co.com/Jw44NZH5/smart-home.jpg",
+    "banner": "https://i.ibb.co.com/gb5zntGL/smarthome.png",
+    "frequency": "Yearly",
+    "price": 199.99,
+    "description": "Transform your home into a smart living space with our expertly curated Smart Home Box. \nEach box includes innovative smart devices, advanced home automation tools, and cutting-edge IoT gadgets. \nDesigned for tech enthusiasts and homeowners who want convenience, safety, and efficiency. \nUnbox the future of home living and experience seamless control at your fingertips.",
+    "tech_category": "Smart Home",
+    "features": [
+      "Smart Home Devices",
+      "Home Automation Tools",
+      "Cutting-edge IoT Gadgets"
+    ],
+    "subscription_benefits": [
+      "Discount on Future Smart Home Purchases",
+      "Exclusive Smart Home Tutorials",
+      "Early Access to Product Releases"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 315
+  },
+  {
+    "id": 2,
+    "name": "Home Office Tech Box",
+    "thumbnail": "https://i.ibb.co.com/Q3ddyVkj/homeoffice.jpg",
+    "banner": "https://i.ibb.co.com/Fb3Mf3Dq/smart-office.jpg",
+    "frequency": "Monthly",
+    "price": 54.99,
+    "description": "Boost your productivity and upgrade your remote workspace with essential office tech gear. \nThe Home Office Tech Box includes ergonomic tools, wireless devices, and smart cable management solutions. \nIdeal for professionals working from home or hybrid setups needing efficiency and comfort. \nCreate your ideal tech-enabled workspace without the stress of researching or shopping.",
+    "tech_category": "Office Tech",
+    "features": [
+      "Ergonomic Gadgets",
+      "Wireless Devices",
+      "Cable Management Solutions"
+    ],
+    "subscription_benefits": [
+      "Digital Productivity Tools",
+      "Workshops & Webinars",
+      "Office Supply Discounts"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 158
+  },
+  {
+    "id": 3,
+    "name": "STEM Discovery Box",
+    "thumbnail": "https://i.ibb.co.com/9m2z6txd/stem.jpg",
+    "banner": "https://i.ibb.co.com/wNKJmgjz/stembox.png",
+    "frequency": "Monthly",
+    "price": 42.5,
+    "description": "Inspire young minds with hands-on STEM activities that make learning fun and engaging. \nEach box features kid-friendly experiments in science, technology, engineering, and math. \nIncludes online learning resources, challenge cards, and parental guides. \nPerfect for curious kids and parents who want education through exploration.",
+    "tech_category": "Education",
+    "features": [
+      "STEM Kits for Kids",
+      "Online Learning Portal",
+      "Challenge Cards"
+    ],
+    "subscription_benefits": [
+      "Parental Guides",
+      "Project Certification",
+      "STEM Achievement Badges"
+    ],
+    "ratings": 4.8,
+    "number_of_reviews": 195
+  },
+  {
+    "id": 4,
+    "name": "Coding Care Package",
+    "thumbnail": "https://i.ibb.co.com/4Z73mvTN/codeth.png",
+    "banner": "https://i.ibb.co.com/wNs9Lm07/coding.jpg",
+    "frequency": "Monthly",
+    "price": 34.99,
+    "description": "Empower your coding journey with monthly packages tailored for developers and learners. \nEach delivery includes programming books, productivity tools, and ergonomic gear. \nEnjoy curated content that boosts your skills and helps avoid burnout. \nWhether you're a beginner or pro, this box delivers growth with every unboxing.",
+    "tech_category": "Software Development",
+    "features": [
+      "Programming books",
+      "Productivity tools",
+      "Ergonomic accessories"
+    ],
+    "subscription_benefits": [
+      "Free online courses",
+      "Coding challenge access",
+      "Developer community invites"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 678
+  },
+  {
+    "id": 5,
+    "name": "AI Learning Box",
+    "thumbnail": "https://i.ibb.co.com/m5SRx7D1/aiimage.jpg",
+    "banner": "https://i.ibb.co.com/ymfFkQfw/aiimage-Banne.jpg",
+    "frequency": "Bi-Monthly",
+    "price": 89.99,
+    "description": "Dive into the exciting world of Artificial Intelligence with hands-on learning kits. \nEach box includes mini projects, ML tutorials, and curated datasets to build real-world AI models. \nLearn concepts from beginner to advanced levels with structured guidance. \nGreat for students, developers, and tech lovers looking to stay ahead.",
+    "tech_category": "Artificial Intelligence",
+    "features": ["Mini AI Projects", "ML Tutorials", "Datasets & APIs"],
+    "subscription_benefits": [
+      "Access to AI Labs",
+      "Project Reviews",
+      "Tech Career Tips"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 204
+  },
+  {
+    "id": 6,
+    "name": "VR Explorer",
+    "thumbnail": "https://i.ibb.co.com/qYqSds2w/vrth.jpg",
+    "banner": "https://i.ibb.co.com/XxzLBcSH/vr.jpg",
+    "frequency": "Quarterly",
+    "price": 99.99,
+    "description": "Step into new virtual worlds with the VR Explorer Box delivered every quarter. \nIncludes VR content access, game credits, and accessories for immersive experiences. \nExplore interactive content from education to gaming and fitness. \nPerfect for VR enthusiasts and developers wanting exclusive VR perks.",
+    "tech_category": "Virtual Reality",
+    "features": [
+      "VR game credits",
+      "Controller accessories",
+      "360° content access"
+    ],
+    "subscription_benefits": [
+      "Early access to VR titles",
+      "Developer Q&A sessions",
+      "Hardware upgrade discounts"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 187
+  },
+  {
+    "id": 7,
+    "name": "Bookworm Box",
+    "thumbnail": "https://i.ibb.co.com/yFH02X7C/book.jpg",
+    "banner": "https://i.ibb.co.com/dJrXTpDJ/book-store.jpg",
+    "frequency": "Monthly",
+    "price": 24.99,
+    "description": "Rediscover the joy of reading with hand-selected books and literary treats. \nIncludes bookmarks, journals, and access to themed reader challenges. \nConnect with your favorite authors through signed letters and club memberships. \nA perfect gift for avid readers and book lovers of all ages.",
+    "tech_category": "Books",
+    "features": [
+      "Handpicked Books",
+      "Bookmarks & Journals",
+      "Reader Challenges"
+    ],
+    "subscription_benefits": [
+      "Signed Author Letters",
+      "Reading Club Access",
+      "Monthly Reading Plan"
+    ],
+    "ratings": 4.7,
+    "number_of_reviews": 300
+  },
+  {
+    "id": 8,
+    "name": "Green Living Box",
+    "thumbnail": "https://i.ibb.co.com/Myj0k7FB/grren.jpg",
+    "banner": "https://i.ibb.co.com/tP8T8bT8/greenBox.jpg",
+    "frequency": "Monthly",
+    "price": 31.99,
+    "description": "Live sustainably with eco-friendly products curated to reduce your carbon footprint. \nEvery box includes zero-waste tools, reusable items, and natural cleaners. \nLearn new green habits through tips and member-only content. \nIdeal for eco-conscious individuals looking to make a difference.",
+    "tech_category": "Sustainability",
+    "features": [
+      "Zero-Waste Products",
+      "Reusable Household Items",
+      "Natural Cleaners"
+    ],
+    "subscription_benefits": [
+      "Tree Planting Program",
+      "Green Living Tips",
+      "Member-only Discounts"
+    ],
+    "ratings": 4.6,
+    "number_of_reviews": 225
+  },
+  {
+    "id": 9,
+    "name": "Coffee Explorer Box",
+    "thumbnail": "https://i.ibb.co.com/MyTsBprT/coffee.jpg",
+    "banner": "https://i.ibb.co.com/nssV8j5g/coffes.jpg",
+    "frequency": "Monthly",
+    "price": 34.99,
+    "description": "Discover the world of specialty coffee with fresh beans delivered to your door. \nEnjoy single-origin selections, tasting notes, and expert brewing guides. \nIncludes bonuses like coupons, roast samples, and roaster interviews. \nIdeal for coffee lovers eager to explore global flavors.",
+    "tech_category": "Beverages",
+    "features": ["Single-Origin Coffee", "Brewing Guides", "Tasting Notes"],
+    "subscription_benefits": [
+      "Free Grinder Coupons",
+      "Bonus Roast Samples",
+      "Roaster Interviews"
+    ],
+    "ratings": 4.9,
+    "number_of_reviews": 348
+  }
+]
