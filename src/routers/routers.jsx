@@ -10,6 +10,9 @@ import Register from "../components/Register/Register";
 import PrivateRoute from "../provider/PrivateRoute";
 import ServiceContentDetails from "../components/ServiceContentDetails/ServiceContentDetails";
 import ErrorCard from "../components/ErrorCard/ErrorCard";
+import TermsCondition from "../Pages/NewArrivalContent/TermsCondition/TermsCondition";
+import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
+import ContactFooter from "../Pages/ContactFooter/ContactFooter";
 
 export const router = createBrowserRouter([
   {
@@ -81,6 +84,34 @@ export const router = createBrowserRouter([
         ),
         errorElement: <ErrorCard></ErrorCard>,
         loader: () => fetch("/upComingData.json"),
+      },
+      {
+        path: "/termsCondition",
+        element: (
+          <PrivateRoute>
+            <TermsCondition></TermsCondition>
+          </PrivateRoute>
+        ),
+        errorElement: <ErrorCard></ErrorCard>,
+      },
+
+      {
+        path: "/privacyPolicy",
+        element: (
+          <PrivateRoute>
+            <PrivacyPolicy></PrivacyPolicy>
+          </PrivateRoute>
+        ),
+        errorElement: <ErrorCard></ErrorCard>,
+      },
+      {
+        path: "/contact",
+        element: (
+          <PrivateRoute>
+            <ContactFooter></ContactFooter>
+          </PrivateRoute>
+        ),
+        errorElement: <ErrorCard></ErrorCard>,
       },
     ],
   },

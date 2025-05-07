@@ -12,7 +12,7 @@ const MainLayout = () => {
       <div>
         <NavBar></NavBar>
       </div>
-      <div className=" min-h-[calc(100vh-381px)]">
+      <div className=" min-h-[calc(100vh-350px)]">
         <div className="max-w-screen-2xl mx-auto">
           {state == "loading" ? <Loading></Loading> : <Outlet></Outlet>}
         </div>

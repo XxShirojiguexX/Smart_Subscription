@@ -1,20 +1,35 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Footer = () => {
   return (
     <div>
+      <Helmet>
+        <title>Footer</title>
+      </Helmet>
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Logo & About  */}
             <div>
-              <h2 className="text-2xl font-bold mb-4">TechBox</h2>
+              <div className="flex justify-center items-center gap-3">
+                <img
+                  className="h-10 w-10 md:block hidden rounded-full relative right-8 -top-3"
+                  src="/icon.jpeg"
+                  alt=""
+                />
+                <h2 className="text-2xl relative right-8 font-bold mb-4">
+                  {" "}
+                  Smart.Subscription
+                </h2>
+              </div>
               <p className="text-gray-400">
-                Curated subscription boxes for tech lovers. Discover gadgets,
-                coding kits, and innovations delivered monthly.
+                "An online platform that delivers personalized subscription
+                boxes, managing everything from signup to shipping for a
+                seamless experience."
               </p>
             </div>
 
@@ -23,31 +38,34 @@ const Footer = () => {
               <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="/terms" className="hover:text-indigo-400 transition">
+                  <Link
+                    to="/termsCondition"
+                    className="hover:text-indigo-400 transition"
+                  >
                     Terms & Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/privacy"
+                  <Link
+                    to="/privacyPolicy"
                     className="hover:text-indigo-400 transition"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact"
                     className="hover:text-indigo-400 transition"
                   >
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="/faq" className="hover:text-indigo-400 transition">
                     FAQs
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -103,7 +121,7 @@ const Footer = () => {
           <hr className="my-8 border-gray-700" />
 
           <p className="text-center text-gray-500 text-base">
-            &copy; 2025 TechBox Inc. All rights reserved.
+            &copy; 2025 Smart.Subscription Inc. All rights reserved.
           </p>
         </div>
       </footer>
