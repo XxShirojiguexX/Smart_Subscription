@@ -71,7 +71,7 @@ const NavBar = () => {
           </span>
         </NavLink>
 
-        <div className="px-2">{user && user.email}</div>
+        {/* <div className="px-2">{user && user.email}</div> */}
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 fontMulish text-xl font-bold">
@@ -103,13 +103,27 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-5">
-        <div>
+        {/* <div>
           <img
             className="w-16 rounded-full"
-            src={`${user ? user.photoURL : userIcon}`}
+            src={`${user ? user.photoURL : " "}`}
             alt="user"
           />
-        </div>
+        </div> */}
+
+        {user && (
+          <div className="relative group">
+            <img
+              className="w-12 h-12 rounded-full cursor-pointer"
+              src={user.photoURL || userIcon}
+              alt="user"
+            />
+            <div className="absolute bottom-[-90px] left-1/2 transform -translate-x-1/2 bg-white shadow-md p-2 rounded-lg w-48 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              <p className="font-semibold text-gray-800">{user.displayName}</p>
+              <p className="text-sm text-gray-600">{user.email}</p>
+            </div>
+          </div>
+        )}
 
         {user ? (
           <button
