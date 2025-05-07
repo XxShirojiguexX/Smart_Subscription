@@ -12,7 +12,7 @@ const TermsCondition = () => {
           Terms and Conditions
         </h1>
         <div className="bg-base-200 px-8 py-5 shadow-2xl rounded-2xl">
-          <p className="mb-4 text-sm text-gray-500">
+          <p className="mb-4 text-sm  text-gray-500">
             Effective Date: 20-20-2024
           </p>
 
@@ -27,7 +27,7 @@ const TermsCondition = () => {
 
         <section className="space-y-6 bg-base-300 px-8 py-8 rounded-xl shadow-2xl ">
           <div>
-            <h2 className="font-semibold text-xl mb-2">1. Eligibility</h2>
+            <h2 className="font-semibold text-xl mb-2">Eligibility</h2>
             <p>
               To use our service, you must be at least 18 years of age or have
               parental/guardian consent. By registering, you confirm that you
@@ -36,9 +36,7 @@ const TermsCondition = () => {
           </div>
 
           <div>
-            <h2 className="font-semibold text-xl mb-2">
-              2. Account Registration
-            </h2>
+            <h2 className="font-semibold text-xl mb-2">Account Registration</h2>
             <p>
               You must provide accurate and complete information during
               registration. You are responsible for maintaining the
@@ -48,7 +46,7 @@ const TermsCondition = () => {
 
           <div>
             <h2 className="font-semibold text-xl mb-2">
-              3. Subscription & Billing
+              Subscription & Billing
             </h2>
             <ul className="list-disc pl-6 space-y-1">
               <li>
@@ -64,7 +62,7 @@ const TermsCondition = () => {
 
           <div>
             <h2 className="font-semibold text-xl mb-2">
-              4. Cancellations & Refunds
+              Cancellations & Refunds
             </h2>
             <ul className="list-disc pl-6 space-y-1">
               <li>
@@ -80,9 +78,7 @@ const TermsCondition = () => {
           </div>
 
           <div>
-            <h2 className="font-semibold text-xl mb-2">
-              5. Shipping & Delivery
-            </h2>
+            <h2 className="font-semibold text-xl mb-2">Shipping & Delivery</h2>
             <ul className="list-disc pl-6 space-y-1">
               <li>Boxes are shipped based on your selected frequency.</li>
               <li>
@@ -97,9 +93,7 @@ const TermsCondition = () => {
           </div>
 
           <div>
-            <h2 className="font-semibold text-xl mb-2">
-              6. Returns & Exchanges
-            </h2>
+            <h2 className="font-semibold text-xl mb-2">Returns & Exchanges</h2>
             <ul className="list-disc pl-6 space-y-1">
               <li>
                 We do not accept returns or exchanges unless the item is damaged
@@ -126,7 +120,7 @@ const TermsCondition = () => {
 
           <div>
             <h2 className="font-semibold text-xl mb-2">
-              8. Intellectual Property
+              Intellectual Property
             </h2>
             <p>
               All content, branding, and materials are the property of
@@ -136,7 +130,7 @@ const TermsCondition = () => {
 
           <div>
             <h2 className="font-semibold text-xl mb-2">
-              9. Limitation of Liability
+              Limitation of Liability
             </h2>
             <ul className="list-disc pl-6 space-y-1">
               <li>Indirect or consequential damages.</li>

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { FaStarHalfAlt } from "react-icons/fa";
+import { IoDocumentTextOutline } from "react-icons/io5";
 import { NavLink, useLoaderData, useParams } from "react-router";
 
 const ServiceContentDetails = () => {
@@ -106,9 +108,9 @@ const ServiceContentDetails = () => {
               <div>
                 <h3 className="text-xl font-bold mb-1">Features :</h3>
                 <ul className="list-disc list-inside text-base font-medium text-gray-600">
-                  {features?.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
+                  <li>{features[0]}</li>
+                  <li>{features[1]}</li>
+                  <li>{features[2]}</li>
                 </ul>
               </div>
               <div>
@@ -116,17 +118,27 @@ const ServiceContentDetails = () => {
                   Subscription Benefits :
                 </h3>
                 <ul className="list-disc list-inside text-base font-medium text-gray-600">
-                  {subscription_benefits?.map((benefit, index) => (
-                    <li key={index}>{benefit}</li>
-                  ))}
+                  <li>{subscription_benefits[0]}</li>
+                  <li>{subscription_benefits[1]}</li>
+                  <li>{subscription_benefits[2]}</li>
                 </ul>
               </div>
             </div>
 
             {/* Rating & Reviews */}
             <div className="mt-4 flex items-center space-x-4 text-base font-semibold text-gray-600">
-              <span>⭐ {ratings}</span>
-              <span>📄 {number_of_reviews} Reviews</span>
+              <span className="flex gap-2 ">
+                <span className="text-amber-400">
+                  <FaStarHalfAlt size={20} />
+                </span>{" "}
+                {ratings}
+              </span>
+              <div className="flex gap-1">
+                <p>
+                  <IoDocumentTextOutline size={20} />{" "}
+                </p>
+                <p>{number_of_reviews} Reviews</p>
+              </div>
             </div>
 
             {/* Review Form */}
@@ -171,8 +183,12 @@ const ServiceContentDetails = () => {
                       className="p-3 bg-gray-100 rounded-md shadow-sm"
                     >
                       <p className="font-medium">{review.text}</p>
-                      <p className="text-sm text-gray-600">
-                        Rating: ⭐ {review.rating}
+                      <p className="text-sm text-gray-600 flex gap-2 items-center">
+                        Rating:{" "}
+                        <span className="text-amber-400">
+                          <FaStarHalfAlt />
+                        </span>{" "}
+                        {review.rating}
                       </p>
                     </li>
                   ))}

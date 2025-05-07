@@ -21,16 +21,15 @@ const SwiperSlider = () => {
           <div
             className="w-full h-full bg-cover bg-center rounded-2xl flex items-center justify-center text-white text-center"
             style={{
-              backgroundImage:
-                "url(https://i.ibb.co.com/xt80xnh8/Subscription-Box-4.jpg)",
+              backgroundImage: "url(https://i.ibb.co.com/TMQL6y0P/code-1.jpg)",
             }}
           >
             <div className="bg-black bg-opacity-50 p-8 rounded-lg">
               <h1 className="text-4xl md:text-6xl font-bold">
-                Welcome to Tech World
+                Entering the World of Code & Innovation
               </h1>
               <p className="mt-4 text-lg md:text-xl">
-                Discover innovative tech every month.
+                Discover innovative tech every day by day.
               </p>
             </div>
           </div>
@@ -41,12 +40,13 @@ const SwiperSlider = () => {
           <div
             className="w-full h-full bg-cover object-fill bg-center rounded-2xl flex items-center justify-center text-white text-center"
             style={{
-              backgroundImage:
-                "url(https://i.ibb.co.com/gZ6czZrX/Subscription-Box-3.jpg)",
+              backgroundImage: "url(https://i.ibb.co.com/Wvs4GD9H/sl2.jpg)",
             }}
           >
             <div className="bg-black bg-opacity-50 p-8 rounded-lg">
-              <h1 className="text-4xl md:text-6xl font-bold">Build Smarter</h1>
+              <h1 className="text-4xl md:text-6xl font-bold">
+                Fresh Pesticide-free vegetables
+              </h1>
               <p className="mt-4 text-lg md:text-xl">
                 Home automation made easy and affordable.
               </p>
@@ -59,16 +59,15 @@ const SwiperSlider = () => {
           <div
             className="w-full h-full bg-cover bg-center rounded-2xl flex items-center justify-center text-white text-center"
             style={{
-              backgroundImage:
-                "url(https://i.ibb.co.com/hFDqvLW8/Subscription-Box-1.jpg)",
+              backgroundImage: "url(https://i.ibb.co.com/zcPZv1x/sl1-1.jpg)",
             }}
           >
             <div className="bg-black bg-opacity-50 p-8 rounded-lg">
               <h1 className="text-4xl md:text-6xl font-bold">
-                Explore the Future
+                Explore The Future Technology
               </h1>
               <p className="mt-4 text-lg md:text-xl">
-                AI, VR, and more — delivered to your door.
+                AI , VR & more tech — delivered to your door.
               </p>
             </div>
           </div>
