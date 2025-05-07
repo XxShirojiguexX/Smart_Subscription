@@ -23,7 +23,7 @@ const NewProduct = () => {
           to="/newArrival"
           className="btn px-10 py-7 text-lg font-semibold rounded-2xl  btn-primary"
         >
-          More Details
+          View More Details
         </NavLink>
       </div>
     </div>

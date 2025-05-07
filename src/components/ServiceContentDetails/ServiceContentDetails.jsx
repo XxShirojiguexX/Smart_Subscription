@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { NavLink, useLoaderData, useParams } from "react-router";
 
 const ServiceContentDetails = () => {
@@ -43,6 +44,9 @@ const ServiceContentDetails = () => {
 
   return (
     <div className="bg-gray-50 text-gray-800 mt-10 mb-10">
+      <Helmet>
+        <title>smartServiceDetails | {id}</title>
+      </Helmet>
       <div className="mt-20 mb-10">
         <h1 className="text-4xl font-bold text-center">
           Subscription Services Details

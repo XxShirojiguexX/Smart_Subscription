@@ -9,12 +9,14 @@ import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
 import PrivateRoute from "../provider/PrivateRoute";
 import ServiceContentDetails from "../components/ServiceContentDetails/ServiceContentDetails";
+import ErrorCard from "../components/ErrorCard/ErrorCard";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     // Component: MainLayout,
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorCard></ErrorCard>,
     children: [
       {
         index: true,
@@ -26,6 +28,7 @@ export const router = createBrowserRouter([
           </p>
         ),
         loader: () => fetch("/data.json"),
+        errorElement: <ErrorCard></ErrorCard>,
       },
       // {
       //   path: "/serviceContainerDetails/:id",
@@ -44,6 +47,7 @@ export const router = createBrowserRouter([
             <ServiceContentDetails></ServiceContentDetails>
           </PrivateRoute>
         ),
+        errorElement: <ErrorCard></ErrorCard>,
         hydrateFallbackElement: (
           <p>
             <span className="loading loading-dots loading-xl"></span>
@@ -60,6 +64,7 @@ export const router = createBrowserRouter([
             <MyProfile></MyProfile>
           </PrivateRoute>
         ),
+        errorElement: <ErrorCard></ErrorCard>,
       },
       {
         path: "/newArrival",
@@ -74,6 +79,7 @@ export const router = createBrowserRouter([
             <span className="loading loading-dots loading-xl"></span>
           </p>
         ),
+        errorElement: <ErrorCard></ErrorCard>,
         loader: () => fetch("/upComingData.json"),
       },
     ],
@@ -83,16 +89,19 @@ export const router = createBrowserRouter([
     path: "/auth",
     // Component: AuthLayout,
     element: <AuthLayout></AuthLayout>,
+    errorElement: <ErrorCard></ErrorCard>,
     children: [
       {
         path: "/auth/login",
         // Component: Login,
         element: <Login></Login>,
+        errorElement: <ErrorCard></ErrorCard>,
       },
       {
         path: "/auth/register",
         // Component: Register,
         element: <Register></Register>,
+        errorElement: <ErrorCard></ErrorCard>,
       },
     ],
   },

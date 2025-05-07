@@ -1,8 +1,12 @@
 import React, { use, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../provider/AuthProvider";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../../firebase/firebase.config";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
+  const googleLoginProvider = new GoogleAuthProvider();
   const [error, setError] = useState("");
   const { signInUser } = use(AuthContext);
   const location = useLocation();
@@ -28,8 +32,24 @@ const Login = () => {
         setError(errorCode);
       });
   };
+
+  const handleGoogleSignin = () => {
+    console.log("google signIn clicked");
+    signInWithPopup(auth, googleLoginProvider)
+      .then((result) => {
+        console.log(result);
+        navigate(`${location.state ? location.state : "/"}`);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div className="flex justify-center items-center py-10">
+      <Helmet>
+        <title>SignIn-Form</title>
+      </Helmet>
       <div className="w-full max-w-md p-4 rounded-md shadow-2xl  sm:p-8 bg-black text-white">
         <h2 className="mb-6 mt-3 text-3xl font-semibold text-center">
           Login to your account
@@ -82,6 +102,7 @@ const Login = () => {
 
           <div className="my-6 space-y-4">
             <button
+              onClick={handleGoogleSignin}
               aria-label="Login with Google"
               type="button"
               className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-600 focus:dark:ring-violet-600"

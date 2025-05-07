@@ -7,12 +7,17 @@ import ServiceFeature from "../ServiceFeature/ServiceFeature";
 import ServicesSectionTitle from "../ServicesSectionTitle/ServicesSectionTitle";
 import ServiceSupport from "../ServiceSupport/ServiceSupport";
 import NewProduct from "../NewProduct/NewProduct";
+import { Helmet } from "react-helmet-async";
+import ErrorCard from "../ErrorCard/ErrorCard";
 
 const Home = () => {
   const ServiceData = useLoaderData();
   // console.log(data);
   return (
     <div className="max-w-screen-2xl mx-auto px-16">
+      <Helmet>
+        <title>Home</title>
+      </Helmet>
       <div className="mt-7">
         <SwiperSlider></SwiperSlider>
       </div>
@@ -33,10 +38,10 @@ const Home = () => {
         <BestSubscription></BestSubscription>
       </div>
       <div>
-        <ServiceSupport></ServiceSupport>
+        <NewProduct></NewProduct>
       </div>
       <div>
-        <NewProduct></NewProduct>
+        <ServiceSupport></ServiceSupport>
       </div>
     </div>
   );

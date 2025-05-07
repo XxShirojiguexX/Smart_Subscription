@@ -2,8 +2,13 @@ import React, { use, useState } from "react";
 import { NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../../provider/AuthProvider";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../../firebase/firebase.config";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
+  const googleProvider = new GoogleAuthProvider();
+
   const { createUser, setUser, updateUser } = use(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
@@ -46,8 +51,23 @@ const Register = () => {
         alert(errorMassage);
       });
   };
+
+  const handleGoogleSignUp = () => {
+    console.log("google signIn clicked");
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        console.log(result);
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="flex justify-center items-center py-10">
+      <Helmet>
+        <title>SignUp-Form</title>
+      </Helmet>
       <div className="w-full max-w-md p-4 rounded-md shadow-2xl  sm:p-8 bg-black text-white">
         <h2 className="mb-6 mt-3 text-3xl font-semibold text-center">
           SignUp to your Account
@@ -140,6 +160,7 @@ const Register = () => {
 
           <div className="my-6 space-y-4">
             <button
+              onClick={handleGoogleSignUp}
               aria-label="Login with Google"
               type="button"
               className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-600 focus:dark:ring-violet-600"

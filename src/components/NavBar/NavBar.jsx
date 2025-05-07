@@ -65,10 +65,14 @@ const NavBar = () => {
           </ul>
         </div>
         <NavLink className="btn btn-ghost text-xl">
-          <img className="h-8 rounded-full" src="/icon.jpeg" alt="logo" />
-          <span className="fontPlusJakarta text-xl font-extrabold">
+          <img
+            className="h-8 md:block hidden rounded-full"
+            src="/icon.jpeg"
+            alt="logo"
+          />
+          <h1 className="fontPlusJakarta text-base md:text-xl font-extrabold">
             Smart.Subscription
-          </span>
+          </h1>
         </NavLink>
 
         {/* <div className="px-2">{user && user.email}</div> */}
@@ -114,7 +118,7 @@ const NavBar = () => {
         {user && (
           <div className="relative group">
             <img
-              className="w-12 h-12 rounded-full cursor-pointer"
+              className="w-12 h-12 rounded-full cursor-pointer hidden md:block"
               src={user.photoURL || userIcon}
               alt="user"
             />
@@ -128,14 +132,14 @@ const NavBar = () => {
         {user ? (
           <button
             onClick={handleLogOut}
-            className="btn bg-[#0EA106] rounded-4xl text-white px-5 fontMulish font-bold text-xl"
+            className="btn bg-[#0EA106] rounded-4xl text-white px-3 md:px-5 fontMulish text-base md:text-xl"
           >
             LogOut
           </button>
         ) : (
           <NavLink
             to="/auth/login"
-            className="btn bg-[#0EA106] rounded-4xl text-white px-5 fontMulish font-bold text-xl"
+            className="btn bg-[#0EA106] rounded-4xl text-white px-3 md:px-5 fontMulish font-bold text-base md:text-xl"
           >
             Log In
           </NavLink>
