@@ -1,9 +1,11 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../../provider/AuthProvider";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
   const { createUser, setUser, updateUser } = use(AuthContext);
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const handleRegister = (event) => {
     event.preventDefault();
@@ -11,7 +13,20 @@ const Register = () => {
     const email = event.target.email.value;
     const photoUrl = event.target.photoUrl.value;
     const password = event.target.password.value;
-    console.log({ name, email, photoUrl, password });
+
+    if (password.length < 6) {
+      alert("password must be equal or greater than 6");
+      return;
+    }
+    if (!/[a-z]/.test(password)) {
+      alert("password must be contain at least one lower case letter");
+      return;
+    }
+    if (!/[A-Z]/.test(password)) {
+      alert("password must be contain at least one UpperCase  letter");
+      return;
+    }
+    // console.log({ name, email, photoUrl, password });
     createUser(email, password)
       .then((result) => {
         const user = result.user;
@@ -22,7 +37,7 @@ const Register = () => {
             navigate("/");
           })
           .catch((error) => {
-            console.log(error);
+            // console.log(error);
             setUser(user);
           });
       })
@@ -91,15 +106,29 @@ const Register = () => {
                 Password
               </label>
 
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="*****"
-                className="w-full px-3 py-2 border rounded-md dark:border-gray-300
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  name="password"
+                  id="password"
+                  placeholder="*****"
+                  className="w-full px-3 py-2 border rounded-md dark:border-gray-300
                  dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
-                required
-              />
+                  required
+                />
+                <button
+                  onClick={() => {
+                    setShowPassword(!showPassword);
+                  }}
+                  className="btn btn-xs absolute top-2 right-5"
+                >
+                  {showPassword ? (
+                    <FaEyeSlash size={20} />
+                  ) : (
+                    <FaEye size={20} />
+                  )}
+                </button>
+              </div>
             </div>
           </div>
 

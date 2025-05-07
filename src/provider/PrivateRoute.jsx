@@ -11,7 +11,7 @@ const PrivateRoute = ({ children }) => {
   //   return <span className="loading loading-bars loading-xl"></span>;
   // }
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
 
   if (loading) {
     return <Loading></Loading>;
