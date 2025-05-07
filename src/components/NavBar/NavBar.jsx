@@ -1,7 +1,22 @@
-import React from "react";
+import React, { use } from "react";
 import { NavLink } from "react-router";
+import { AuthContext } from "../../provider/AuthProvider";
+import userIcon from "/user.png";
 
 const NavBar = () => {
+  const { user, signOutUser } = use(AuthContext);
+
+  const handleLogOut = () => {
+    console.log("user trying to logOut");
+    signOutUser()
+      .then(() => {
+        alert("Sign-out successful");
+      })
+      .catch((error) => {
+        // An error happened.
+        console.log(error);
+      });
+  };
   return (
     <div className="navbar p-0 bg-base-100 shadow-sm mx-auto px-8 md:px-12 lg:px-16 xl:px-24">
       <div className="navbar-start">
@@ -55,6 +70,8 @@ const NavBar = () => {
             Smart.Subscription
           </span>
         </NavLink>
+
+        <div className="px-2">{user && user.email}</div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 fontMulish text-xl font-bold">
@@ -87,14 +104,34 @@ const NavBar = () => {
       </div>
       <div className="navbar-end space-x-5">
         <div>
-          <img src="/user.png" alt="user" />
+          <img
+            className="w-16 rounded-full"
+            src={`${user ? user.photoURL : userIcon}`}
+            alt="user"
+          />
         </div>
-        <NavLink
+
+        {user ? (
+          <button
+            onClick={handleLogOut}
+            className="btn bg-[#0EA106] rounded-4xl text-white px-5 fontMulish font-bold text-xl"
+          >
+            LogOut
+          </button>
+        ) : (
+          <NavLink
+            to="/auth/login"
+            className="btn bg-[#0EA106] rounded-4xl text-white px-5 fontMulish font-bold text-xl"
+          >
+            Log In
+          </NavLink>
+        )}
+        {/* <NavLink
           to="/auth/login"
           className="btn bg-[#0EA106] rounded-4xl text-white px-5 fontMulish font-bold text-xl"
         >
           Log In
-        </NavLink>
+        </NavLink> */}
       </div>
     </div>
   );

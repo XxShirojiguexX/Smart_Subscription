@@ -1,10 +1,12 @@
 import React from "react";
 
 import NavBar from "../components/NavBar/NavBar";
-import { Outlet } from "react-router";
+import { Outlet, useNavigation } from "react-router";
 import Footer from "../components/Footer/Footer";
+import Loading from "../components/Loading/Loading";
 
 const MainLayout = () => {
+  const { state } = useNavigation();
   return (
     <div>
       <div>
@@ -12,7 +14,7 @@ const MainLayout = () => {
       </div>
       <div className=" min-h-[calc(100vh-381px)]">
         <div className="max-w-screen-2xl mx-auto">
-          <Outlet></Outlet>
+          {state == "loading" ? <Loading></Loading> : <Outlet></Outlet>}
         </div>
       </div>
       <div>

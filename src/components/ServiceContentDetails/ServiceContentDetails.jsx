@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLoaderData, useParams } from "react-router";
+import { NavLink, useLoaderData, useParams } from "react-router";
 
 const ServiceContentDetails = () => {
   const data = useLoaderData();
@@ -175,6 +175,13 @@ const ServiceContentDetails = () => {
                 </ul>
               )}
             </div>
+            <NavLink
+              to="/"
+              type="submit"
+              className="w-full mt-5 px-8 py-3 text-lg text-center font-bold rounded-md dark:bg-violet-600 dark:text-gray-50"
+            >
+              Back to Category
+            </NavLink>
           </div>
         </div>
       </div>
