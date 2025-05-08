@@ -183,7 +183,7 @@ const Register = () => {
 
           <button
             type="submit"
-            className="w-full px-8 py-3 text-base font-semibold rounded-md dark:bg-violet-600 dark:text-gray-50"
+            className="w-full px-8 py-3 text-base font-semibold rounded-md bg-violet-600 text-gray-50"
           >
             Sign Up
           </button>
