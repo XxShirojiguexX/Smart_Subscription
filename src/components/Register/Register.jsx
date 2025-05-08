@@ -5,6 +5,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../firebase/firebase.config";
 import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const googleProvider = new GoogleAuthProvider();
@@ -38,6 +39,7 @@ const Register = () => {
         // console.log(user);
         updateUser({ displayName: name, photoURL: photoUrl })
           .then(() => {
+            toast(" User SignUp by successfully");
             setUser({ ...user, displayName: name, photoURL: photoUrl });
             navigate("/");
           })
@@ -47,8 +49,8 @@ const Register = () => {
           });
       })
       .catch((error) => {
-        const errorMassage = error.massage;
-        alert(errorMassage);
+        // const errorMassage = error.massage;
+        // alert(errorMassage);
       });
   };
 
@@ -56,11 +58,13 @@ const Register = () => {
     console.log("google signIn clicked");
     signInWithPopup(auth, googleProvider)
       .then((result) => {
-        console.log(result);
+        // console.log(result);
+        toast(" User SignUp by Google successfully");
         navigate("/");
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
+        toast(" User SignUp by Google Unsuccessfully");
       });
   };
   return (

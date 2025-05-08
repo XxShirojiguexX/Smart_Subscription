@@ -4,6 +4,7 @@ import { AuthContext } from "../../provider/AuthProvider";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../firebase/firebase.config";
 import { Helmet } from "react-helmet-async";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const googleLoginProvider = new GoogleAuthProvider();
@@ -21,8 +22,9 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         // console.log(user);
+        toast(" User login successfully");
         navigate(`${location.state ? location.state : "/"}`);
-        alert(" user login successfully");
+
         //   setUser(user);
       })
       .catch((error) => {
@@ -30,6 +32,7 @@ const Login = () => {
         // const errorMassage = error.massage;
         // alert(errorCode, errorMassage);
         setError(errorCode);
+        toast("User login Unsuccessfully");
       });
   };
 
@@ -37,11 +40,13 @@ const Login = () => {
     console.log("google signIn clicked");
     signInWithPopup(auth, googleLoginProvider)
       .then((result) => {
-        console.log(result);
+        // console.log(result);
+        toast(" User login by Google successfully");
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
+        toast(" User login by Google Unsuccessfully");
       });
   };
 

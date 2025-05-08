@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { NavLink, useLoaderData, useParams } from "react-router";
+import { toast } from "react-toastify";
 
 const ServiceContentDetails = () => {
   const data = useLoaderData();
@@ -30,7 +31,7 @@ const ServiceContentDetails = () => {
 
   const handleAddReview = () => {
     if (!reviewText || !ratingValue || ratingValue < 1 || ratingValue > 5) {
-      alert("Please enter a review and rating between 1 and 5.");
+      toast("Please enter a review and rating between 1 and 5.");
       return;
     }
 

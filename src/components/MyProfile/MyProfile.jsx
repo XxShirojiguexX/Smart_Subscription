@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { AuthContext } from "../../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 const MyProfile = () => {
   const { user, updateUser } = useContext(AuthContext);
@@ -14,12 +15,12 @@ const MyProfile = () => {
 
     updateUser({ displayName: name, photoURL })
       .then(() => {
-        // toast.success("Profile updated successfully!");
+        toast("Profile updated successfully!");
         setName("");
         setPhotoURL("");
       })
       .catch((error) => {
-        // toast.error(`Failed to update profile: ${error.message}`);
+        toast(`Failed to update profile: ${error.message}`);
       });
   };
 
