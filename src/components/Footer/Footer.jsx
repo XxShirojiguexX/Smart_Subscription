@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link, NavLink } from "react-router";
@@ -7,9 +7,6 @@ import { Link, NavLink } from "react-router";
 const Footer = () => {
   return (
     <div>
-      <Helmet>
-        <title>Footer</title>
-      </Helmet>
       <footer className="bg-gray-900 text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -13,6 +13,7 @@ import ErrorCard from "../components/ErrorCard/ErrorCard";
 import TermsCondition from "../Pages/NewArrivalContent/TermsCondition/TermsCondition";
 import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 import ContactFooter from "../Pages/ContactFooter/ContactFooter";
+import ForgetPassword from "../Pages/ForgetPassword/ForgetPassword";
 
 export const router = createBrowserRouter([
   {
@@ -132,6 +133,11 @@ export const router = createBrowserRouter([
         path: "/auth/register",
         // Component: Register,
         element: <Register></Register>,
+        errorElement: <ErrorCard></ErrorCard>,
+      },
+      {
+        path: "/auth/forgetPassword",
+        element: <ForgetPassword></ForgetPassword>,
         errorElement: <ErrorCard></ErrorCard>,
       },
     ],

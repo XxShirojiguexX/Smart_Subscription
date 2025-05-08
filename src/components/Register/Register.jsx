@@ -55,7 +55,7 @@ const Register = () => {
   };
 
   const handleGoogleSignUp = () => {
-    console.log("google signIn clicked");
+    // console.log("google signIn clicked");
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         // console.log(result);

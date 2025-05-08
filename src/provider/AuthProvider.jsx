@@ -28,7 +28,7 @@ const AuthProvider = ({ children }) => {
   };
 
   const updateUser = (updatedUser) => {
-    return updateProfile(auth.currentUser, updatedUser); // ✅ used in MyProfile
+    return updateProfile(auth.currentUser, updatedUser);
   };
 
   const signOutUser = () => {
@@ -53,10 +53,9 @@ const AuthProvider = ({ children }) => {
     signOutUser,
     loading,
     setLoading,
-    updateUser, // ✅ expose updateUser to context
+    updateUser,
   };
 
-  // ✅ FIXED: Use .Provider to wrap context value
   return (
     <AuthContext.Provider value={authData}>{children}</AuthContext.Provider>
   );

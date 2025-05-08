@@ -37,7 +37,7 @@ const Login = () => {
   };
 
   const handleGoogleSignin = () => {
-    console.log("google signIn clicked");
+    // console.log("google signIn clicked");
     signInWithPopup(auth, googleLoginProvider)
       .then((result) => {
         // console.log(result);
@@ -83,7 +83,10 @@ const Login = () => {
                 <label htmlFor="password" className="text-base font-semibold">
                   Password
                 </label>
-                <NavLink to="" className="text-xs hover:underline">
+                <NavLink
+                  to="/auth/forgetPassword"
+                  className="text-xs hover:underline"
+                >
                   Forgot password?
                 </NavLink>
               </div>

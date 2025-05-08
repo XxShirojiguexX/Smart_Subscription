@@ -8,7 +8,6 @@ import ServicesSectionTitle from "../ServicesSectionTitle/ServicesSectionTitle";
 import ServiceSupport from "../ServiceSupport/ServiceSupport";
 import NewProduct from "../NewProduct/NewProduct";
 import { Helmet } from "react-helmet-async";
-import ErrorCard from "../ErrorCard/ErrorCard";
 
 const Home = () => {
   const ServiceData = useLoaderData();
