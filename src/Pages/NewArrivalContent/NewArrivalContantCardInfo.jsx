@@ -1,7 +1,8 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const NewArrivalContantCardInfo = ({ data }) => {
-  const { thumbnail, name, frequency, price, tech_category } = data || {};
+  const { thumbnail, name, frequency, price, tech_category, id } = data || {};
 
   return (
     <div
@@ -28,9 +29,12 @@ const NewArrivalContantCardInfo = ({ data }) => {
             <span className="font-bold">ServiceDuration :</span> {frequency}
           </p>
         </div>
-        <button className="mt-4 w-full bg-[#78a106] font-semibold text-white py-2 rounded-lg hover:bg-blue-300 transition">
-          View More
-        </button>
+
+        <NavLink to={`/newArrivalContentCardDetails/${id}`}>
+          <button className=" mt-4 w-full bg-[#78a106] font-semibold text-white py-2 rounded-lg hover:bg-blue-300 transition">
+            View More
+          </button>
+        </NavLink>
       </div>
     </div>
   );

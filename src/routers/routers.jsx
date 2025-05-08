@@ -14,6 +14,7 @@ import TermsCondition from "../Pages/NewArrivalContent/TermsCondition/TermsCondi
 import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
 import ContactFooter from "../Pages/ContactFooter/ContactFooter";
 import ForgetPassword from "../Pages/ForgetPassword/ForgetPassword";
+import NewArrivalContantCardDetails from "../Pages/NewArrivalContent/NewArrivalContantCardDetails";
 
 export const router = createBrowserRouter([
   {
@@ -84,6 +85,21 @@ export const router = createBrowserRouter([
           </p>
         ),
         errorElement: <ErrorCard></ErrorCard>,
+        loader: () => fetch("/upComingData.json"),
+      },
+      {
+        path: "/newArrivalContentCardDetails/:id",
+        element: (
+          <PrivateRoute>
+            <NewArrivalContantCardDetails></NewArrivalContantCardDetails>
+          </PrivateRoute>
+        ),
+        errorElement: <ErrorCard></ErrorCard>,
+        hydrateFallbackElement: (
+          <p>
+            <span className="loading loading-dots loading-xl"></span>
+          </p>
+        ),
         loader: () => fetch("/upComingData.json"),
       },
       {
