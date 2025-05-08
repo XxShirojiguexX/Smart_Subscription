@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 const SwiperSlider = () => {
   return (
-    <div className="w-full h-[80vh]">
+    <div className="w-full h-[70vh] md:h-[80vh]">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
@@ -24,13 +24,15 @@ const SwiperSlider = () => {
               backgroundImage: "url(https://i.ibb.co.com/TMQL6y0P/code-1.jpg)",
             }}
           >
-            <div className="bg-black bg-opacity-50 p-8 rounded-lg">
-              <h1 className="text-4xl md:text-6xl font-bold">
-                Entering the World of Code & Innovation
-              </h1>
-              <p className="mt-4 text-lg md:text-xl">
-                Discover innovative tech every day by day.
-              </p>
+            <div className="px-2 md:px-1 lg:px-0">
+              <div className="bg-black bg-opacity-50 p-8 rounded-lg">
+                <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold">
+                  Entering the World of Code & Innovation
+                </h1>
+                <p className="mt-4 text-lg md:text-xl">
+                  Discover innovative tech every day by day.
+                </p>
+              </div>
             </div>
           </div>
         </SwiperSlide>
@@ -43,13 +45,15 @@ const SwiperSlider = () => {
               backgroundImage: "url(https://i.ibb.co.com/Wvs4GD9H/sl2.jpg)",
             }}
           >
-            <div className="bg-black bg-opacity-50 p-8 rounded-lg">
-              <h1 className="text-4xl md:text-6xl font-bold">
-                Fresh Pesticide-free vegetables
-              </h1>
-              <p className="mt-4 text-lg md:text-xl">
-                Home automation made easy and affordable.
-              </p>
+            <div className="px-2 md:px-1 lg:px-0">
+              <div className="bg-black bg-opacity-50 p-8 rounded-lg">
+                <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold">
+                  Fresh Pesticide-free vegetables
+                </h1>
+                <p className="mt-4 text-lg md:text-xl">
+                  Home automation made easy and affordable.
+                </p>
+              </div>
             </div>
           </div>
         </SwiperSlide>
@@ -62,13 +66,15 @@ const SwiperSlider = () => {
               backgroundImage: "url(https://i.ibb.co.com/zcPZv1x/sl1-1.jpg)",
             }}
           >
-            <div className="bg-black bg-opacity-50 p-8 rounded-lg">
-              <h1 className="text-4xl md:text-6xl font-bold">
-                Explore The Future Technology
-              </h1>
-              <p className="mt-4 text-lg md:text-xl">
-                AI , VR & more tech — delivered to your door.
-              </p>
+            <div className="px-2 md:px-1 lg:px-0">
+              <div className="bg-black bg-opacity-50 p-8 rounded-lg">
+                <h1 className="text-2xl md:text-5xl lg:text-6xl font-bold">
+                  Explore The Future Technology
+                </h1>
+                <p className="mt-4 text-lg md:text-xl">
+                  AI , VR & more tech — delivered to your door.
+                </p>
+              </div>
             </div>
           </div>
         </SwiperSlide>

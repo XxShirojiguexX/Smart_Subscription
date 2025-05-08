@@ -19,8 +19,15 @@ const ForgetPassword = () => {
       });
   };
   return (
-    <div className="flex justify-center items-center min-h-screen  bg-gray-100">
-      <div className="w-full max-w-md -mt-20 p-6 bg-white rounded-lg shadow-2xl">
+    <div className="flex flex-col justify-center items-center min-h-screen  bg-gray-100">
+      <div className="mt-10 px-6">
+        <img
+          className="rounded-xl md:h-[400px] h-[250px] "
+          src="https://i.ibb.co.com/mVTwH8r1/forgetimage.jpg"
+          alt="icon"
+        />
+      </div>
+      <div className="w-full md:max-w-lg max-w-sm  mt-10 mb-10 p-6 bg-white rounded-lg shadow-2xl">
         <h2 className="text-2xl font-semibold text-center mb-6">
           Forget password for Email
         </h2>

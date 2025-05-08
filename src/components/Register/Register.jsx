@@ -68,11 +68,11 @@ const Register = () => {
       });
   };
   return (
-    <div className="flex justify-center items-center py-10">
+    <div className="flex justify-center items-center py-10 px-5 md:px-0">
       <Helmet>
         <title>SignUp-Form</title>
       </Helmet>
-      <div className="w-full max-w-md p-4 rounded-md shadow-2xl  sm:p-8 bg-black text-white">
+      <div className="w-full max-w-md p-4 rounded-xl shadow-2xl  sm:p-8 bg-black text-white">
         <h2 className="mb-6 mt-3 text-3xl font-semibold text-center">
           SignUp to your Account
         </h2>
