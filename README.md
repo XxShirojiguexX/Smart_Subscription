@@ -1,12 +1,28 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Smart.Subscription
 
-Currently, two official plugins are available:
+Smart.Subscription is a Subscription Box Service Platform designed to simplify the recurring Purchase of products across various industries such as education, technology, fresh vegetables, coding courses, and bookstores. It offers automation, personalized curation, inventory management, and analytics, making it ideal for businesses to boost revenue, customer loyalty, and actionable insights.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## Expanding the ESLint configuration
+The purpose of the key features in a Smart.Subscription Platform is to support and enhance the entire subscription lifecycle—from attracting customers to fulfilling recurring deliveries and analyzing performance. Each feature plays a specific role in achieving the platform’s core goals of automation, personalization, customer satisfaction, and business growth.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Purpose
+
+Smart.Subscription is a Subscription Box Service Platform. The purpose of a Smart.Subscription Platform is to streamline and automate the sale, management, and delivery of recurring, curated products or services. It helps businesses build long-term relationships with customers by offering convenience, personalization, and consistency in product delivery.
+
+## Technologies Used
+
+- **React Router**: For managing routing in the React app.
+- **Tailwind CSS**: For styling the application with a utility-first approach.
+- **DaisyUI**: For customizable UI components.
+- **Mamba UI**: For enhancing UI development.
+- **React Icons**: For adding customizable icons to the app.
+- **Firebase**: For backend services like authentication and database management.
+- **Swiper**: For adding interactive and responsive sliders.
+- **React Helmet Async**: For handling meta tags and SEO dynamically.
+- **React DOM**: For managing rendering in the browser.
+- **React Toastify**: For showing toast notifications within the app.
+
+## Live Link

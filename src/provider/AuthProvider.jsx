@@ -12,22 +12,23 @@ import app from "../firebase/firebase.config";
 export const AuthContext = createContext();
 
 const auth = getAuth(app);
+
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // console.log(loading, user);
   const createUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
+
   const signInUser = (email, password) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const updateUser = (updatedUser) => {
-    return updateProfile(auth.currentUser, updatedUser);
+    return updateProfile(auth.currentUser, updatedUser); // ✅ used in MyProfile
   };
 
   const signOutUser = () => {
@@ -52,9 +53,13 @@ const AuthProvider = ({ children }) => {
     signOutUser,
     loading,
     setLoading,
-    updateUser,
+    updateUser, // ✅ expose updateUser to context
   };
-  return <AuthContext value={authData}>{children}</AuthContext>;
+
+  // ✅ FIXED: Use .Provider to wrap context value
+  return (
+    <AuthContext.Provider value={authData}>{children}</AuthContext.Provider>
+  );
 };
 
 export default AuthProvider;
