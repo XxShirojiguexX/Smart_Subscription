@@ -68,7 +68,7 @@ const NavBar = () => {
         </div>
         <NavLink className="btn btn-ghost text-xl">
           <img
-            className="h-8 md:block hidden rounded-full"
+            className="h-10 w-10 md:block hidden rounded-full"
             src="/icon.jpeg"
             alt="logo"
           />
