@@ -141,6 +141,7 @@ const Register = () => {
                   required
                 />
                 <button
+                  type="button"
                   onClick={() => {
                     setShowPassword(!showPassword);
                   }}
